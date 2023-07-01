@@ -78,11 +78,11 @@ footer:
     copyright:      © 2023 Gemfast
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
-disqus:
-    shortname:      # 1234
+# disqus:
+#     shortname:      # 1234
 
 # Google analytics code, get your code here https://www.google.com/analytics/
-google_analytics:
+# google_analytics:
 
 # Number of posts displayed on blog page
 paginate:           10

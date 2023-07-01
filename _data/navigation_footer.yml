@@ -3,8 +3,11 @@
 - title: Home
   url: /
 
-- title: Blog
+- title: Pricing
   url: /blog/
 
-- title: Contact
-  url: /contact/
+- title: Docs
+  url: /docs/
+
+- title: Downloads
+  url: /docs/

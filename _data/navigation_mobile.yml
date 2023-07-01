@@ -3,14 +3,14 @@
 - title: Home
   url: /
 
+- title: Pricing
+  url: /blog/
+
 - title: Docs
   url: /docs/installation/
 
-- title: Blog
-  url: /blog/
-
-- title: Changelog
-  url: /changelog-timeline/
+- title: Downloads
+  url: /downloads/
 
 - title: Contact
   url: /contact/

@@ -4,15 +4,17 @@ left:
   - title: Home
     url: /
 
-  - title: Docs
-    url: /docs/installation/
-
   - title: Pricing
     url: /blog/
 
-  - title: Roadmap
-    url: /changelog-posts/
-
+  - title: Docs
+    url: /docs/installation/
+  
+  - title: Downloads
+    url: /downloads/
+  
+  - title: Contact
+    url: /contact/
 
 # Navbar right menu navigation links
 
