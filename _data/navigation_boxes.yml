@@ -1,0 +1,16 @@
+# Boxes include navigation
+
+- title: Speed
+  desc: Fast to install, fast to run, and easy to manage
+  icon: bolt
+  doc: hero
+
+- title: Security
+  desc: Prevent the installation of gems with known vulnerabilities
+  icon: lock
+  doc: installation
+
+- title: Support
+  desc: Support and consulting available to help you get the most out of Gemfast
+  icon: server
+  doc: customize
