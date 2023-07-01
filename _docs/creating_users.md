@@ -1,8 +1,8 @@
 ---
-title: Creating your first post in Jekyll
+title: Creating and Managing Users
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
 author:
-tags: featured
+tags: [features]
 ---
 
 To create a new post, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:

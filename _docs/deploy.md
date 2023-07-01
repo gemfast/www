@@ -1,5 +1,5 @@
 ---
-title: Footer options
+title: Deploying Gemfast
 subtitle: This document covers the setup and options of theme feature described in the doc title
 author: john
 tags: [setup]

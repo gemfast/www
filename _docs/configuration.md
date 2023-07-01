@@ -5,13 +5,10 @@ author: greg
 tags: [setup]
 ---
 
-- [File Locations](#file-locations)
-- [Configuration](#configuration)
-  - [Server](#server)
-  - [Caddy](#caddy)
-  - [Mirror](#mirror)
-  - [Filter](#filter)
-  - [CVE](#cve)
+### Table of Contents
+{:.no_toc}
+* TOC
+{:toc}
 
 
 ### File Locations

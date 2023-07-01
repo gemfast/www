@@ -1,9 +1,5 @@
 # Video include content
 
-- title: Jekyll Introduction
-  desc: Overview of the most popular static generator
+- title: Gemfast Introduction
+  desc: Overview of Gemfast and how it works
   url: https://youtu.be/T1itpPvFWHI
-
-- title: Creating a post
-  desc: Lean how to publish your first post in Jekyll
-  url: https://youtu.be/gsYqPL9EFwQ
