@@ -5,13 +5,10 @@ left:
     url: /
 
   - title: Pricing
-    url: /blog/
+    url: /thanks/
 
   - title: Docs
     url: /docs/installation/
-  
-  - title: Downloads
-    url: /downloads/
   
   - title: Contact
     url: /contact/
