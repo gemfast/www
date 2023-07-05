@@ -2,7 +2,8 @@
 title: Basic Setup
 subtitle: In a few basic commands you can configure and start your Gemfast server. For more details see the configuration reference.
 author: greg
-tags: [setup]
+tags: [setup, featured]
+order: 2
 ---
 
 ### Configuring The Gemfast Service

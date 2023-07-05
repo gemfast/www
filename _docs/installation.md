@@ -2,7 +2,8 @@
 title: Installation
 subtitle: Packaged versions of Gemfast are currently available for ubuntu and debian based systems and rely on systemd for managing the service.    
 author: greg
-tags: [setup]
+tags: [setup, featured]
+order: 1
 ---
 
 ### Install Gemfast on Ubuntu

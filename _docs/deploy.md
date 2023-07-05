@@ -1,8 +1,9 @@
 ---
 title: Deploying Gemfast
 subtitle: This document covers the setup and options of theme feature described in the doc title
-author: john
-tags: [setup]
+author: greg
+tags: [setup, featured]
+order: 5
 ---
 
 Edit copyright notice in `_config.yml`:

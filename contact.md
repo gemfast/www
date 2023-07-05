@@ -1,12 +1,12 @@
 ---
 layout: page
 width: xsmall
-title: Got Any Questions
+title: Contact
 permalink: /contact/
 ---
 
-##### Morbi varius in accumsan blandit, elit ligula velit, luctus mattis ante nulla nulla.
+##### Have questions or comments?
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Fill out the form below and we'll respond as soon as possible.
 
 {% include netlify_form.html name="true" %}

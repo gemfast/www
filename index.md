@@ -18,5 +18,5 @@ hero:
 
 {% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quicke answers to frequent pre-sale questions asked by customers" %}
 
-{% include cta.html title="Have a question?" button_text="Contact Us" button_url="/contact/" subtitle="Get in touch with us for details on setup, licensing, and custom services" %}
+{% include cta.html title="Have more questions?" button_text="Contact Us" button_url="/contact/" subtitle="Get in touch with us for details on setup, licensing, and custom services" %}
 

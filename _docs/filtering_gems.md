@@ -1,8 +1,8 @@
 ---
 title: Allow/Deny Lists for Gems
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
-tags: [features, featured]
-author: evan
+tags: [features]
+author: greg
 ---
 
 Then add the following to a page to display featured docs:

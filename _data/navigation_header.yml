@@ -5,7 +5,7 @@ left:
     url: /
 
   - title: Pricing
-    url: /thanks/
+    url: /pricing/
 
   - title: Docs
     url: /docs/installation/
@@ -17,13 +17,13 @@ left:
 
 right:
 
-  - title: Buy License
+  - title: Buy Now
     url: https://buy.stripe.com/test_4gw9DZdCy3PV73abII
-    button: primary
+    button: success
 
   - title: Download
     url: /contact/
-    button: success
+    button: primary
 
   # - title: Changelog
   #   url: /contact/

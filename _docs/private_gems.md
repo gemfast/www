@@ -2,7 +2,8 @@
 title: Private Gems
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
 tags: [features, featured]
-author: evan
+author: greg
+order: 3
 ---
 
 Home page category boxes are added in `_data/navigation_boxes.yml`, e.g.:

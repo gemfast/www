@@ -11,7 +11,8 @@
         {% endif %}
         
         <ul class="uk-list uk-list-large uk-margin-medium-top">
-        {% for doc in site.docs %}
+        {% assign site_docs = site.docs | sort: 'order' %}
+        {% for doc in site_docs %}
             {% if doc.tags contains include.tag %}
             <li><a class="uk-box-shadow-hover-small" href="{{ site.baseurl }}{{ doc.url }}">{{doc.title}}</a></li>
             {% endif %}
