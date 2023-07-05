@@ -10,7 +10,7 @@ hero:
 
 {% include boxes.html columns="3" title="Features" %}
 
-{% include team.html authors="prometheus, caddy, boltdb, casbin" title="Built using production ready software" %}
+{% include deps.html authors="prometheus, caddy, boltdb, casbin" title="Built using production ready software" %}
 
 {% include featured.html tag="featured" title="Get Started" subtitle="Selected documentation articles to get you started with Gemfast" %}
 

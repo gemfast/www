@@ -22,7 +22,7 @@ right:
     button: success
 
   - title: Download
-    url: /contact/
+    url: https://downloads.gemfast.io/gemfast-server/
     button: primary
 
   # - title: Changelog
