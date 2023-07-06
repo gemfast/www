@@ -8,10 +8,14 @@ order: 1
 
 ### Install Gemfast on Ubuntu
 
-To install Gemfast, run the following commands:
+To install Gemfast, download a `.deb` package from `downloads.gemfast.io`:
 
 ```bash
-wget https://downloads.gemfast.io/stable/gemfast/gemfast-latest-x86_64.deb
+wget https://downloads.gemfast.io/stable/latest/gemfast-latest-x86_64.deb
+```
+
+And then install it using `dpkg`:
+```bash
 dpkg -i ./gemfast-latest-x86_64.deb
 ```
 
@@ -19,10 +23,14 @@ If using an arm64 architecture make sure to download `gemfast-latest-arm64.deb` 
 
 ### Upgrade Gemfast on Ubuntu
 
-To upgrade Gemfast, download a newer version and install it:
+To upgrade Gemfast, download a newer version:
 
 ```bash
-wget https://downloads.gemfast.io/stable/gemfast/gemfast-latest-x86_64.deb
+wget https://downloads.gemfast.io/stable/latest/gemfast-latest-x86_64.deb
+```
+
+And then install it using `dpkg`:
+```bash
 dpkg -i ./gemfast-latest-x86_64.deb
 ```
 

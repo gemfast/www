@@ -3,7 +3,7 @@ layout: page
 width: expand
 hero:
     title: The fast and secure rubygems server
-    subtitle: Built from the ground up to be the most simple, fast, and secure way to self-host your gems.
+    subtitle: Built from the ground up to be the most simple, fast, and secure way to self-host your ruby gems.
     image: logo.png
     search: false
 ---

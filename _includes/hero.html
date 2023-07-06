@@ -14,12 +14,16 @@
         {% include navbar.html %}
 
         <div class="uk-section section-hero uk-position-relative" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-            <div class="uk-container uk-container-small">
+            <div class="uk-container uk-container-small uk-text-center">
                 {% if page.hero.image %}
                 <p class="hero-image uk-text-center"><img src="{{ site.uploads | absolute_url }}{{ page.hero.image }}" alt="Hero"></p>
                 {% endif %}
                 <h1 class="uk-heading-primary uk-text-center uk-margin-remove-top">{{ page.hero.title }}</h1>
                 {% if page.hero.subtitle %}<p class="uk-text-lead uk-text-center">{{ page.hero.subtitle }}</p>{% endif %}
+                <br>
+                <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                    <a class="uk-button uk-button-success uk-button-large uk-margin-small-top" href="https://downloads.gemfast.io/gemfast-server" style="color: white">Download Now</a>
+                </div>
 
                 {% if page.hero.search %}
                 <div class="hero-search">
@@ -48,7 +52,6 @@
 
                 </div>
                 {% endif %}
-
             </div>
         </div>
 

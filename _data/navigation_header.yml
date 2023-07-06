@@ -21,7 +21,7 @@ right:
     url: https://buy.stripe.com/test_4gw9DZdCy3PV73abII
     button: success
 
-  - title: Download
+  - title: Downloads
     url: https://downloads.gemfast.io/gemfast-server/
     button: primary
 
