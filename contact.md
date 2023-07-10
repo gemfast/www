@@ -9,4 +9,4 @@ permalink: /contact/
 
 Fill out the form below and we'll respond as soon as possible.
 
-{% include netlify_form.html name="true" %}
+{% include netlify-form.html name="true" %}

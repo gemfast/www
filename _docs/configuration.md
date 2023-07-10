@@ -10,7 +10,6 @@ tags: [setup]
 * TOC
 {:toc}
 
-
 ### File Locations
 
 Gemfast has a few different configuration files that it uses. The locations for these files are:
@@ -29,18 +28,18 @@ Gemfast server configuration applies to the Gemfast server which receives reques
 
 | Name | Description | Default |
 | ---  | ----------- | ------- |
-| license_key | License key purchased from gemfast.io | `nil` |
-| port | Port the gemfast server listens on | 2020 |
-| log_level | Log level for the gemfast server | `info` |
-| dir | Base directory for gemfast data | `/var/gemfast` |
-| gem_dir | Directory where gems are stored | `/var/gemfast/gems` |
-| db_dir | Directory where the database file is stored | `/var/gemfast/db` |
-| acl_path | Path to the acl configuration file | `/opt/gemfast/etc/gemfast/gemfast_acl.csv` |
-| auth_model_path | Path to the auth_model configuration file | `/opt/gemfast/etc/gemfast/auth_model.conf` |
+| **license_key** | License key purchased from gemfast.io | `nil` |
+| **port** | Port the gemfast server listens on | 2020 |
+| **log_level** | Log level for the gemfast server | `info` |
+| **dir** | Base directory for gemfast data | `/var/gemfast` |
+| **gem_dir** | Directory where gems are stored | `/var/gemfast/gems` |
+| **db_dir** | Directory where the database file is stored | `/var/gemfast/db` |
+| **acl_path** | Path to the acl configuration file | `/opt/gemfast/etc/gemfast/gemfast_acl.csv` |
+| **auth_model_path** | Path to the auth_model configuration file | `/opt/gemfast/etc/gemfast/auth_model.conf` |
 
 Configured in `/etc/gemfast/gemfast.hcl`
 
-```terraform
+```
 license_key     = ""
 port            = 2020
 log_level       = "info"
@@ -57,14 +56,14 @@ Caddy configuration applies to the caddy web server which is used as a reverse p
 
 | Name | Description | Default |
 | ---  | ----------- | ------- |
-| port | Port caddy will listen on | `443` |
-| host | The hostname for the gemfast service | `https://localhost` |
-| metrics_disabled | Disable caddy metrics | `false` |
-| admin_api_enabled | Enable the caddy admin API | `false` |
+| **port** | Port caddy will listen on | `443` |
+| **host** | The hostname for the gemfast service | `https://localhost` |
+| **metrics_disabled** | Disable caddy metrics | `false` |
+| **admin_api_enabled** | Enable the caddy admin API | `false` |
 
 Configured in `/etc/gemfast/gemfast.hcl`
 
-```terraform
+```
 caddy {
   port              = 443
   host              = "https://localhost"
@@ -79,12 +78,12 @@ Mirror configuration enables a gem mirror upstream that downloads and caches gem
 
 | Name | Description | Default |
 | ---  | ----------- | ------- |
-| enabled | Enable or disabled mirroing | `true` |
-| upstream | The upstream server to mirror | `https://rubygems.org` |
+| **enabled** | Enable or disabled mirroing | `true` |
+| **upstream** | The upstream server to mirror | `https://rubygems.org` |
 
 Configured in `/etc/gemfast/gemfast.hcl`
 
-```terraform
+```
 mirror {
   enabled  = true
   upstream = "https://rubygems.org"
@@ -97,13 +96,13 @@ Filter configuration enables the ability to allow-list or deny-list gems from be
 
 | Name | Description | Default |
 | ---  | ----------- | ------- |
-| enabled | Enable or disabled gem filtering | `true` |
-| action | The action to take when a regex is matched. Values: `allow | deny` | `deny` |
-| regex | Array of regular expressions to match against a gem name | `[]` |
+| **enabled** | Enable or disabled gem filtering | `true` |
+| **action** | The action to take when a regex is matched. Values: `allow | deny` | `deny` |
+| **regex** | Array of regular expressions to match against a gem name | `[]` |
 
 Configured in `/etc/gemfast/gemfast.hcl`
 
-```terraform
+```
 filter {
   enabled = false
   action  = "deny"
@@ -117,13 +116,13 @@ CVE settings enable the ability to block gems from being downloaded or uploaded 
 
 | Name | Description | Default |
 | ---  | ----------- | ------- |
-| enabled | Enable or disabled gem filtering based on CVE severity | `true` |
-| max_severity | The action to take when a regex is matched. Values: `low | medium | high ` | `high` |
-| ruby_advisory_db_dir | Directory where the ruby advisory db is stored | `/opt/gemfast/share/gemfast` |
+| **enabled** | Enable or disabled gem filtering based on CVE severity | `true` |
+| **max_severity** | The action to take when a regex is matched. Values: `low | medium | high ` | `high` |
+| **ruby_advisory_db_dir** | Directory where the ruby advisory db is stored | `/opt/gemfast/share/gemfast` |
 
 Configured in `/etc/gemfast/gemfast.hcl`
 
-```terraform
+```
 cve {
   enabled              = false
   max_severity         = "high"
