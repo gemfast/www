@@ -10,13 +10,13 @@ order: 1
 
 To install Gemfast, download a `.deb` package from `downloads.gemfast.io`:
 
-```
+```bash
 wget https://downloads.gemfast.io/stable/latest/gemfast-latest-x86_64.deb
 ```
 
 And then install it using `dpkg`:
 
-```
+```bash
 sudo dpkg -i ./gemfast-latest-x86_64.deb
 ```
 
@@ -30,19 +30,19 @@ Gemfast is managed using the systemd init system. Gemfast consists of a web serv
 
 To start the server and enable the server, run:
 
-```
+```bash
 sudo systemctl enable gemfast.service --now
 ```
 
 To restart the server, run:
 
-```
+```bash
 sudo systemctl restart gemfast.service
 ```
 
 To stop the server, run"
 
-```
+```bash
 sudo systemctl stop gemfast.service
 ```
 
@@ -50,13 +50,13 @@ sudo systemctl stop gemfast.service
 
 To upgrade Gemfast, download a newer version:
 
-```
+```bash
 wget https://downloads.gemfast.io/stable/latest/gemfast-latest-x86_64.deb
 ```
 
 And then install it using `dpkg`:
 
-```
+```bash
 sudo dpkg -i ./gemfast-latest-x86_64.deb
 ```
 
@@ -66,6 +66,6 @@ This will install the newer version of Gemfast, removing the older version in th
 
 To uninstall Gemfast, run the following command:
 
-```
+```bash
 sudo dpkg -r gemfast
 ```

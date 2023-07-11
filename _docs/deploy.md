@@ -24,15 +24,13 @@ Gemfast is built and tested on the following platforms.
 
 Gemfast has the following hardware requirements:
 
-* 64-bit CPU architecture
-* 4 total cores (physical or virtual)
-* 8 GB of RAM or more
-* minimum of 10 GB of free disk space in /var
+* Minimum - 2 Core CPU, 2 GB RAM, 10 GB of free disk space in `/var`
+* Recommended Average/Typical - 2 Core CPU, 4 GB RAM, 10 GB of free disk space in `/var`
+* Recommended Large - 4 Core CPU, 8 GB RAM, 20 GB of free disk space in `/var`
 
 ### Software Requirements
 
 Gemfast comes pre-packaged with all requirements except systemd which is included by default on the supported platforms. Ruby is not required. 
-
 
 ### Automatic HTTPS
 
@@ -65,9 +63,3 @@ Restart Gemfast:
 ```
 sudo systemctl restart gemfast.service
 ```
-
-### Examples
-
-Below is an example of deploying a Gemfast server to Amazon Web Services using terraform:
-
-* [Deploying on Amazon EC2](https://github.com/gemfast/deploy-aws-ec2)
