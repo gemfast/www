@@ -4,7 +4,7 @@
   - setup
   - configuration
   - deploy
-  - creating_users
+  - backups
   - api_reference
   - free_version
 
@@ -12,10 +12,10 @@
   docs:
   - mirroring_gems
   - private_gems
-  - filtering_gems
-  - cve_filtering
   - local_auth
   - github_auth
+  - filtering_gems
+  - cve_filtering
 
 - title: Help
   docs:

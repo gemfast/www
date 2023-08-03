@@ -28,7 +28,10 @@ Providing this will overwrite the previously generated password.
 To login to the Gemfast server run the following:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" https://gemfast.example.com/admin/api/v1/login -d '{"username": "admin", "password":"mysupersecretpassword"}'
+curl -X POST \
+-H "Content-Type: application/json" \
+-d '{"username": "admin", "password":"mysupersecretpassword"}' \
+https://gemfast.example.com/admin/api/v1/login
 ```
 
 This will return an JSON object with a JWT token to use in subsuquent API calls:

@@ -36,6 +36,7 @@ Gemfast server configuration applies to the Gemfast server which receives reques
 | **db_dir** | Directory where the database file is stored | `/var/gemfast/db` |
 | **acl_path** | Path to the acl configuration file | `/opt/gemfast/etc/gemfast/gemfast_acl.csv` |
 | **auth_model_path** | Path to the auth_model configuration file | `/opt/gemfast/etc/gemfast/auth_model.conf` |
+| **private_gems_namespace** | The namespace where private gems will be accessed | `private` 
 
 Configured in `/etc/gemfast/gemfast.hcl`
 
