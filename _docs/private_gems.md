@@ -10,15 +10,15 @@ order: 3
 
 In order to install and manage private gems on a Gemfast server, a private gems token is required. Private gem tokens can be generated after successfully logging in to a Gemfast server.
 
-**Note: Private gem tokens are different from the JWT token that authenticates users to the `/admin/api/v1` endpoints.**
+Private gem tokens are different from the JWT token that authenticates users to the `/admin/api/v1` endpoints.
 
-This example assumes the server is configured to use the [local authentication](/local_auth) strategy. 
+<aside>
+  <p>
+    These examples assume the server is configured to use the <a href="/docs/local_auth">local authentication</a> strategy.
+  </p>
+</aside>
 
-You must replace:
-
-* `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
-* `USERNAME` with your Gemfast username.
-* `PASSWORD` with your Gemfast password.
+To login, run the following cURL command:
 
 ```bash
 curl -X POST \
@@ -26,6 +26,12 @@ curl -X POST \
 -d '{"username": "USERNAME", "password": "PASSWORD"}' \
 https://GEMFAST_HOST/admin/api/v1/login
 ```
+
+You must replace:
+
+* `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
+* `USERNAME` with your Gemfast username.
+* `PASSWORD` with your Gemfast password.
 
 Save the `token` for the next request:
 
@@ -37,15 +43,17 @@ Save the `token` for the next request:
 }
 ```
 
-You must replace:
-
-* `JWT_TOKEN` with the `token` value from above.
+Next, generate a token for that will be used by `bundler` or the `gem` command to authenticate with gemfast:
 
 ```bash
 curl -X POST \
 -H 'Authorization: Bearer JWT_TOKEN' \
 https://GEMFAST_HOST/admin/api/v1/token
 ```
+
+You must replace:
+
+* `JWT_TOKEN` with the `token` value from above.
 
 The `token` field in the response is the private gem token which can be used with RubyGems and bundler.
 
@@ -64,25 +72,18 @@ Gemfast supports tokens with granular permissions. A user's role determines what
 
 In order to push gems to Gemfast, add an entry to `~/.gem/credentials`. 
 
-You must replace:
-
-* `USERNAME` with your Gemfast username.
-* `TOKEN` with your Gemfast private gems token.
-
 ```yaml
 :gemfast: USERNAME:TOKEN
 ```
 
+You must replace:
+
+* `USERNAME` with your Gemfast username.
+* `TOKEN` with your Gemfast private gems token.
+
 #### Installing Private Gems from Gemfast
 
 To install gems, you need to authenticate using your private gems token by updating your gem sources to include https://USERNAME:TOKEN@GEMFAST_HOST/NAMESPACE. 
-
-You must replace:
-
-* `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
-* `USERNAME` with your Gemfast username.
-* `TOKEN` with your Gemfast private gems token.
-* `NAMESPACE` with the value of `private_gems_namespace` from `/etc/gemfast/gemfast.hcl`. By default the namespace is `private`
 
 To use private gems with `bundler`, add a source scope to your `Gemfile`:
 
@@ -95,6 +96,13 @@ source "https://USERNAME:TOKEN@GEMFAST_HOST/NAMESPACE" do
   gem "GEM_NAME"
 end
 ```
+
+You must replace:
+
+* `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
+* `USERNAME` with your Gemfast username.
+* `TOKEN` with your Gemfast private gems token.
+* `NAMESPACE` with the value of `private_gems_namespace` from `/etc/gemfast/gemfast.hcl`. By default the namespace is `private`
 
 It is also possible to set the `USERNAME` and `TOKEN` values in the `bundler` configuration so they are not present in the `Gemfile`:
 
@@ -128,13 +136,6 @@ gem sources -a https://USERNAME:TOKEN@GEMFAST_HOST/NAMESPACE
 
 Gemfast supports the existing RubyGems API for publishing gems.
 
-You must replace:
-
-* `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
-* `USERNAME` with your Gemfast username.
-* `TOKEN` with your Gemfast private gems token.
-* `NAMESPACE` with the value of `private_gems_namespace` from `/etc/gemfast/gemfast.hcl`. By default the namespace is `private`
-
 To publish a gem, first build it using the `gem` CLI:
 
 ```bash
@@ -149,6 +150,11 @@ gem push --key gemfast \
 pkg/GEM_NAME-0.0.1.gem
 ```
 
+You must replace:
+
+* `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
+* `NAMESPACE` with the value of `private_gems_namespace` from `/etc/gemfast/gemfast.hcl`. By default the namespace is `private`
+
 Gemfast also supports "Gem in a Box" style uploads:
 
 ```bash
@@ -158,16 +164,16 @@ gem inabox -g https://USERNAME:TOKEN@GEMFAST_HOST/NAMESPACE \
 pkg/GEM_NAME-0.0.1.gem
 ```
 
-#### Deleting a Private Gem from Gemfast
-
-Gemfast supports the existing RubyGems API for yanking gems.
-
 You must replace:
 
 * `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
 * `USERNAME` with your Gemfast username.
 * `TOKEN` with your Gemfast private gems token.
 * `NAMESPACE` with the value of `private_gems_namespace` from `/etc/gemfast/gemfast.hcl`. By default the namespace is `private`
+
+#### Deleting a Private Gem from Gemfast
+
+Gemfast supports the existing RubyGems API for yanking gems.
 
 To delete (yank) a private gem, use the `gem` CLI:
 
@@ -177,14 +183,23 @@ gem yank --key gemfast \
 GEM_NAME -v VERSION
 ```
 
-It is also possible to delete a private gem using the API directly.
-
 You must replace:
 
-* `JWT_TOKEN` with the `token` value received from a successful login to `/admin/api/v1/login`.
+* `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
+* `NAMESPACE` with the value of `private_gems_namespace` from `/etc/gemfast/gemfast.hcl`. By default the namespace is `private`
+
+It is also possible to delete a private gem using the API directly.
 
 ```bash
 curl -X DELETE \
 -H 'Authorization: JWT_TOKEN' \
 https://GEMFAST_HOST/NAMESPACE/api/v1/gems/yank?gem=GEM_NAME&version=VERSION
 ```
+
+You must replace:
+
+* `JWT_TOKEN` with the `token` value received from a successful login to `/admin/api/v1/login`.
+* `GEMFAST_HOST` with the hostname of your self-hosted Gemfast server.
+* `USERNAME` with your Gemfast username.
+* `TOKEN` with your Gemfast private gems token.
+* `NAMESPACE` with the value of `private_gems_namespace` from `/etc/gemfast/gemfast.hcl`. By default the namespace is `private`

@@ -21,3 +21,16 @@
 // Other vendor styles
 // @import "syntax-highlighting/cld";
 @import "syntax-highlighting/bw";
+
+aside {
+    width: 80%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    
+  }
+  
+  aside > p {
+    margin: 0.5rem;
+  }
