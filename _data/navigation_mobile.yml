@@ -17,5 +17,5 @@
   button: success
 
 - title: Downloads
-  url: https://downloads.gemfast.io/gemfast-server/
+  url: https://github.com/gemfast/server/releases/latest/
   button: primary

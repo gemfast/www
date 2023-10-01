@@ -8,21 +8,15 @@ order: 1
 
 ### Install Gemfast on Debian/Ubuntu
 
-To install Gemfast, download a `.deb` package from `downloads.gemfast.io`:
-
-```bash
-wget https://downloads.gemfast.io/stable/latest/gemfast-latest-x86_64.deb
-```
+To install Gemfast, [download the latest Debian installer from GitHhub](https://github.com/gemfast/server/releases/latest).
 
 And then install it using `dpkg`:
 
 ```bash
-sudo dpkg -i ./gemfast-latest-x86_64.deb
+sudo dpkg -i ./gemfast_<version>_amd64.deb
 ```
 
-If using an arm64 architecture make sure to download `gemfast-latest-arm64.deb` instead.
-
-The main configuration file is found at `/etc/gemfast/gemfast.hcl`.
+Once installed the main configuration file can found at `/etc/gemfast/gemfast.hcl`.
 
 ### Managing the Gemfast Service
 

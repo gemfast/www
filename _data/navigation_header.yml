@@ -11,7 +11,7 @@ left:
     url: /docs/installation/
   
   - title: Contact
-    url: /contact/
+    url: mailto:support@gemfast.io
 
 # Navbar right menu navigation links
 
@@ -22,7 +22,7 @@ right:
     button: success
 
   - title: Downloads
-    url: https://downloads.gemfast.io/gemfast-server/
+    url: https://github.com/gemfast/server/releases/latest/
     button: primary
 
   # - title: Changelog

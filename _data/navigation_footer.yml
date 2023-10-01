@@ -9,5 +9,8 @@
 - title: Docs
   url: /docs/install
 
+- title: Contact
+  url: mailto:support@gemfast.io
+
 - title: Downloads
-  url: /contact/
+  url: https://github.com/gemfast/server/releases/latest
