@@ -6,27 +6,44 @@ tags: [setup, featured]
 order: 2
 ---
 
-### Configuring The Gemfast Service
+The Gemfast configuration file uses [hcl](https://github.com/hashicorp/hcl). By default it is located at `/etc/gemfast/gemfast.hcl`. The default configuration is commented out because Gemfast uses sensible defaults as much as possible. 
 
-The Gemfast configuration file uses the [hcl](https://github.com/hashicorp/hcl) format. By default it is located at `/etc/gemfast/gemfast.hcl`.
+### Providing a Gemfast License
 
-The default configuration is empty because Gemfast uses sensible defaults as much as possible. If you start the service at this point it will start Gemfast in an unlicensed mode which makes a subset of features available. See [Free Version]() for more info.
+If you start the service without providing a vaild license, Gemfast will start in free mode which makes a subset of features available. See [Free Version](/pricing/#free-version) for more info.
 
-If you have purchased a license, you can go ahead and add that to the configuration file and configure an auth mode by updating `/etc/gemfast/gemfast.hcl`:
+If you have purchased a license, add that to the configuration file:
 
 ```terraform
 license_key = "<your license key>"
+```
 
+### Auth Modes
+
+Gemfast includes 3 different auth modes - none, local and GitHub. The easist way to enable auth is by using local mode. With local mode you can add and remove users directly in the Gemfast configuration file:
+
+```terraform
 auth "local" {
-    admin_password = "mysupersecretpassword"
+    user {
+        username = "bobvance"
+        password = "passw0rd"
+    }
 }
 ```
 
-For the complete configuration reference see [Configuring Gemfast]().
+### Mirroring
+
+The default configuration will mirror rubygems.org automatically but you can mirror any gem server using the following:
+
+```terraform
+mirror "https://gems.acme.com" {}
+```
+
+For the complete configuration reference see [Configuring Gemfast](/docs/configuration).
 
 ### Starting The Gemfast Serice
 
-To run the following to start the gemfast server now and on startup:
+Gemfast uses `systemd` to manage Caddy and the Gemfast server. Run the following to start the servers now and on system startup:
 
 ```bash
 sudo systemctl enable gemfast.service --now
