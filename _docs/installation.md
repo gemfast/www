@@ -1,10 +1,12 @@
 ---
 title: Installation
-subtitle: Packaged versions of Gemfast are currently available for ubuntu and debian based systems and rely on systemd for managing the service.    
+subtitle: Packaged versions of Gemfast are currently available for ubuntu and debian based systems and rely on systemd for managing the service. Gemfast is also available as a Docker image.
 author: greg
 tags: [setup, featured]
 order: 1
 ---
+
+Gemfast is distributed as both a `.deb` package and a [Docker image](../docker). It is recommended to use the `.deb` package when installing Gemfast on a virtual machine or bare metal server.
 
 ### Install Gemfast on Debian/Ubuntu
 

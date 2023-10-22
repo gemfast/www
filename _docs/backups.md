@@ -28,5 +28,7 @@ To restore from a backup, unpack the backed up folders to their original locatio
 tar xvf gemfast_backup_1689105521.tar.gz
 sudo mv ./var/gemfast /var/
 sudo mv ./etc/gemfast /etc/
+sudo chmod -R gemfast:gemfast /var/gemfast
+sudo chmod -R gemfast:gemfast /etc/gemfast
 sudo systemctl restart gemfast.service
 ```

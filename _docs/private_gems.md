@@ -1,10 +1,12 @@
 ---
-title: Private Gems
-subtitle: RubyGems can be configured to publish gems to Gemfast and to use packages stored on Gemfast as dependencies in a Ruby project.
+title: Hosting Private Gems
+subtitle: Setting up Gemfast to host private gems and make them available to install.
 tags: [features, featured]
 author: greg
 order: 3
 ---
+
+Gemfast supports uploading via `gem push` or `gem inabox` commands. Once pushed, the gems can be installed via `bundle install` or `gem install`.
 
 ### Creating a Private Gems Token
 
