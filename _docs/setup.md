@@ -10,7 +10,7 @@ The Gemfast configuration file uses [hcl](https://github.com/hashicorp/hcl). By 
 
 ### Providing a Gemfast License
 
-If you start the service without providing a vaild license, Gemfast will start in free mode which makes a subset of features available. See [Free Version](/pricing/#free-version) for more info.
+If you start the service without providing a vaild license, Gemfast will start in ELv2 mode which makes a subset of features available. See [ELv2 Version](/pricing/#elv2-version) for more info.
 
 If you have purchased a license, add that to the configuration file:
 
@@ -20,13 +20,14 @@ license_key = "<your license key>"
 
 ### Auth Modes
 
-Gemfast includes 3 different auth modes - none, local and GitHub. The easist way to enable auth is by using local mode. With local mode you can add and remove users directly in the Gemfast configuration file:
+Gemfast includes 3 different auth modes - none, local and GitHub. The easist way to enable auth is by using local mode. With local mode you can add and remove users directly in the Gemfast configuration file. See the [configuration page](../configuration) for details
 
 ```terraform
 auth "local" {
     user {
         username = "bobvance"
         password = "passw0rd"
+        role     = "write"
     }
 }
 ```
@@ -43,8 +44,10 @@ For the complete configuration reference see [Configuring Gemfast](/docs/configu
 
 ### Starting The Gemfast Serice
 
-Gemfast uses `systemd` to manage Caddy and the Gemfast server. Run the following to start the servers now and on system startup:
+The debian package installation uses `systemd` to manage Caddy and the Gemfast server. Run the following to start the servers now and on system startup:
 
 ```bash
 sudo systemctl enable gemfast.service --now
 ```
+
+Check the [docker page](../docker) If using the docker image.

@@ -22,7 +22,13 @@
                 {% if page.hero.subtitle %}<p class="uk-text-lead uk-text-center">{{ page.hero.subtitle }}</p>{% endif %}
                 <br>
                 <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-                    <a class="uk-button uk-button-success uk-button-large uk-margin-small-top" href="https://github.com/gemfast/server/releases/latest" style="color: white">Download Now</a>
+                    <pre>docker pull ghcr.io/gemfast/server:latest</pre>
+                </div>
+                <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                    <p>or</p>
+                </div>
+                <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                    <pre>curl -LO https://github.com/gemfast/server/releases/download/v0.9.3/gemfast-0.9.3-amd64.deb</pre>
                 </div>
 
                 {% if page.hero.search %}

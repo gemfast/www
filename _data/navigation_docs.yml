@@ -1,14 +1,14 @@
 - title: Getting Started
   docs:
   - installation
+  - docker
   - setup
   - configuration
   - deploy
   - backups
   - api_reference
-  - free_version
 
-- title: Features
+- title: Guides
   docs:
   - mirroring_gems
   - private_gems
@@ -16,7 +16,3 @@
   - github_auth
   - filtering_gems
   - cve_filtering
-
-- title: Help
-  docs:
-  - support

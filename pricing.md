@@ -5,7 +5,7 @@ permalink: /pricing/
 width: small
 ---
 
-Gemfast is available as either a [free version](#free-version) with a ELv2 license or a [paid version](#paid-version) with a commercial license.
+Gemfast is available for free with a [ELv2 license](#elv2-version) or as a [licensed version](#licensed-version) with a commercial license and support.
 
 <div>
   <table>
@@ -64,7 +64,7 @@ Gemfast is available as either a [free version](#free-version) with a ELv2 licen
     </div>
 </div>
 
-#### Free Version
+#### ELv2 Version
                     
 Gemfast is available to use for free with a limited feature set. To use the free version, [download and install the product following the documentation](/docs/install) and start the server without providing a license key.
 
@@ -74,9 +74,9 @@ The free version of Gemfast supports:
 * <strong>Automatic HTTPS</strong>
 * <strong>Pre-Packed `.deb` Installer</strong>
 
-#### Paid Version
+#### Licensed Version
 
-Paid gemfast licenses are available as an annual subscription. Buying a license enables all features of Gemfast for production use for 1 server instance. Your subscription will automatically renew every year unless it is canceled.
+Gemfast licenses are available as an annual subscription. Buying a license enables all features of Gemfast for production use for 1 server instance. Your subscription will automatically renew every year unless it is canceled.
 
 It is recommended that you purchase any licenses using a group email account so the license is not attached to any one employee's email address. 
 
