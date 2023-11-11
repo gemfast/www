@@ -10,6 +10,9 @@ left:
   - title: Docs
     url: /docs/installation/
   
+  - title: Blog
+    url: /blog/
+  
   - title: Contact
     url: mailto:support@gemfast.io
 

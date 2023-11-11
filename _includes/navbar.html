@@ -89,6 +89,7 @@
                     {% endif %}
 
                     <ul class="uk-navbar-nav uk-visible@m">
+                        <li style="margin-top: 0.2em;"><div class="uk-navbar-item"><a class="github-button" href="https://github.com/gemfast/server" data-color-scheme="no-preference: light_high_contrast; light: light_high_contrast; dark: dark_high_contrast;" data-size="large" data-show-count="true" aria-label="Star buttons/github-buttons on GitHub">Star</a></div></li>
                         {% for link in site.data.navigation_header.right %}
                             {% if link.url contains 'http' %}
                                 {% assign domain = '' %}

@@ -7,6 +7,20 @@ width: small
 
 Gemfast is available for free with a [ELv2 license](#elv2-version) or as a [licensed version](#licensed-version) with a commercial license and support.
 
+<div class="uk-section uk-text-center">
+    <div class="uk-container uk-container-small">
+        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+            <strong><a class="uk-button uk-button-success uk-button-large uk-margin-small-top" href="https://buy.stripe.com/test_4gw9DZdCy3PV73abII" style="color: white">Buy Now $299/year</a></strong>
+        </div>
+    </div>
+</div>
+
+#### Why is it not free
+
+Mike Perham, the creator of the popular gem [sidekiq](https://sidekiq.org/) helped inpire the decision. He built a business around an open-source project that allowed him to work full-time on it which benefits the users because they get new features and updates regularly. That's the dream!
+
+#### Features: Paid vs Licensed
+
 <div>
   <table>
     <thead>
@@ -54,14 +68,6 @@ Gemfast is available for free with a [ELv2 license](#elv2-version) or as a [lice
       </tr>
     </tbody>
   </table>
-</div>
-
-<div class="uk-section uk-text-center">
-    <div class="uk-container uk-container-small">
-        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-            <strong><a class="uk-button uk-button-success uk-button-large uk-margin-small-top" href="https://buy.stripe.com/test_4gw9DZdCy3PV73abII" style="color: white">Buy Now $299/year</a></strong>
-        </div>
-    </div>
 </div>
 
 #### ELv2 Version

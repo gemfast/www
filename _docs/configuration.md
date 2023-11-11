@@ -37,7 +37,8 @@ Gemfast server configuration.
 | **acl_path** | Path to the acl configuration file | `/opt/gemfast/etc/gemfast/gemfast_acl.csv` |
 | **auth_model_path** | Path to the auth_model configuration file | `/opt/gemfast/etc/gemfast/auth_model.conf` |
 | **private_gems_namespace** | The namespace where private gems will be accessed | `private`
-| **ui_disabled** | Disable the Gemfast UI | `false` 
+| **ui_disabled** | Disable the Gemfast UI | `false`
+| **metrics_disabled** | Disable Gemfast prometheus metrics | `false` 
 
 Configured in `/etc/gemfast/gemfast.hcl`
 
@@ -52,6 +53,7 @@ acl_path               = "/opt/gemfast/etc/gemfast/gemfast_acl.csv"
 auth_model_path        = "/opt/gemfast/etc/gemfast/auth_model.conf"
 private_gems_namespace = "private"
 ui_disabled            = false
+metrics_disabled       = false
 ```
 
 #### Caddy
