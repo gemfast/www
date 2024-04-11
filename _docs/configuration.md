@@ -28,7 +28,6 @@ Gemfast server configuration.
 
 | Name | Description | Default |
 | ---  | ----------- | ------- |
-| **license_key** | License key purchased from gemfast.io | `nil` |
 | **port** | Port the gemfast server listens on | 2020 |
 | **log_level** | Log level for the gemfast server | `info` |
 | **dir** | Base directory for gemfast data | `/var/gemfast` |
@@ -43,7 +42,6 @@ Gemfast server configuration.
 Configured in `/etc/gemfast/gemfast.hcl`
 
 ```
-license_key            = ""
 port                   = 2020
 log_level              = "info|trace|debug|warn"
 dir                    = "/var/gemfast"

@@ -3,21 +3,11 @@
 - title: Home
   url: /
 
-- title: Pricing
-  url: /pricing/
-
 - title: Docs
   url: /docs/installation/
 
-- title: Blog
-  url: /blog/
-
 - title: Contact
-  url: /contact/
-
-- title: Buy License
-  url: https://buy.stripe.com/test_4gw9DZdCy3PV73abII
-  button: success
+  url: https://github.com/gemfast/server/issues
 
 - title: Downloads
   url: https://github.com/gemfast/server/releases/latest/

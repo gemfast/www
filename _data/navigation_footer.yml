@@ -3,14 +3,11 @@
 - title: Home
   url: /
 
-- title: Pricing
-  url: /pricing/
-
 - title: Docs
   url: /docs/install
 
 - title: Contact
-  url: mailto:support@gemfast.io
+  url: https://github.com/gemfast/server/issues
 
 - title: Downloads
   url: https://github.com/gemfast/server/releases/latest
