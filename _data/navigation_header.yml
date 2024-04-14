@@ -4,25 +4,18 @@ left:
   - title: Home
     url: /
 
-  - title: Pricing
-    url: /pricing/
-
   - title: Docs
     url: /docs/installation/
   
-  - title: Blog
-    url: /blog/
+  # - title: Blog
+  #   url: /blog/
   
   - title: Contact
-    url: mailto:support@gemfast.io
+    url: https://github.com/gemfast/server/issues
 
 # Navbar right menu navigation links
 
 right:
-
-  - title: Buy License
-    url: https://buy.stripe.com/test_4gw9DZdCy3PV73abII
-    button: success
 
   - title: Downloads
     url: https://github.com/gemfast/server/releases/latest/
